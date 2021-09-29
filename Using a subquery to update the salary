@@ -1,0 +1,4 @@
+UPDATE emp SET vlsalario = vlsalario*(1.02)
+WHERE coddepto IN
+(SELECT coddepto FROM depto WHERE nmdepto = 'financeiro')
+RETURNING nmemp, snemp, vlsalario
