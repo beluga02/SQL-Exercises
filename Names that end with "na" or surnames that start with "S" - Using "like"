@@ -1,0 +1,3 @@
+SELECT nmemp, snemp FROM emp
+WHERE nmemp LIKE '%na'
+OR snemp LIKE 'S%'
