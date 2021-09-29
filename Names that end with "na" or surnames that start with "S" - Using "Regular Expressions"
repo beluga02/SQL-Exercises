@@ -1,0 +1,3 @@
+SELECT nmemp, snemp FROM emp
+WHERE nmemp ~* 'n[a]$'
+OR snemp ~* '^[s]'
