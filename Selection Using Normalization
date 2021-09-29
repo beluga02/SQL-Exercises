@@ -1,0 +1,3 @@
+SELECT (SELECT vlsalario - (SELECT AVG(vlsalario) FROM emp)) /
+(SELECT STDDEV(vlsalario) FROM emp)
+AS selecao FROM emp
