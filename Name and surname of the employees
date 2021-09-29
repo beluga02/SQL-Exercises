@@ -1,0 +1,4 @@
+SELECT x.nmemp, x.snemp, COUNT(y.codemp)
+FROM emp x
+FULL OUTER JOIN depte y USING(codemp)
+GROUP BY x.nmemp, x.snemp
